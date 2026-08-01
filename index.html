@@ -1,0 +1,540 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Build - Construction</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/eae6be9be1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a href="index.html" class="brand" aria-label="Prime Build home">
+        <h1 style="color: var(--light); font-weight: bold;">PRIME<strong style="color: var(--gold);">BUILD</strong></h1>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-ul desktop-nav">
+        <li class="nav-li"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-li"><a href="about.html" class="nav-link">About us</a></li>
+        <li class="nav-li"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+        <li class="nav-li"><a href="contact.html" class="nav-link">Contact us</a></li>
+        <li class="nav-li nav-cta-item"><a href="contact.html" class="nav-cta mobile-nav-cta">Request a Quote</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Mobile drawer (separate from header) -->
+  <ul class="nav-ul mobile-drawer" id="mobileNav" aria-hidden="true">
+    <li class="nav-li"><a href="index.html" class="nav-link">Home</a></li>
+    <li class="nav-li"><a href="about.html" class="nav-link">About us</a></li>
+    <li class="nav-li"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+    <li class="nav-li"><a href="contact.html" class="nav-link">Contact us</a></li>
+  </ul>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p id="hero-eyebrow" class="eyebrow">Premium Construction, Built to Last</p>
+        <h1 class="heading">Built on trust. Delivered with excellence.</h1>
+        <p class="subheading">
+            Experience reliable construction and building solutions backed by thoughtful project management, refined craftsmanship, and a client-first approach from concept to completion.
+        </p>
+        <div class="cta-container">
+            <a href="portfolio.html" class="primary-cta">View Projects</a>
+            <a href="contact.html" class="secondary-cta">Contact Us</a>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <img src="assets/images/about-img.jpg" alt="construction workers">
+      <div class="about-text">
+        <h2>Who we are</h2>
+        <p>
+      Prime Build Construction Company is a trusted leader in delivering innovative, high-quality construction solutions for residential, commercial, and industrial projects. With a commitment to excellence, safety, precision, and timely delivery, we build durable structures that create lasting value while consistently exceeding client expectations.
+        </p>
+        <a href="about.html" class="about-cta">Learn more</a>
+      </div>
+    </section>
+    <section class="services-section" aria-labelledby="services-title">
+      <div class="services-intro">
+        <p class="eyebrow section-eyebrow">Comprehensive Expertise</p>
+        <h2 class="section-title service-title" id="services-title">Our Services</h2>
+        <p class="section-subheading service-subheading">
+          Delivering comprehensive construction solutions for residential, commercial, and industrial projects with a commitment to quality, safety, and timely execution.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <h3>Residential Construction</h3>
+          <p>Thoughtfully designed homes and refined spaces built with durability, comfort, and lasting value.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i>Custom home builds</li>
+            <li><i class="fa-solid fa-check"></i>Premium finishes</li>
+            <li><i class="fa-solid fa-check"></i>Reliable delivery</li>
+          </ul>
+          <a href="contact.html" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <i class="fa-solid fa-building"></i>
+          </div>
+          <h3>Commercial Construction</h3>
+          <p>Efficient, high-performance workspaces crafted for business growth and long-term use.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i>Office developments</li>
+            <li><i class="fa-solid fa-check"></i>Code-compliant builds</li>
+            <li><i class="fa-solid fa-check"></i>Flexible scheduling</li>
+          </ul>
+          <a href="contact.html" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <i class="fa-solid fa-industry"></i>
+          </div>
+          <h3>Industrial Construction</h3>
+          <p>Robust facilities and operational infrastructure built for efficiency, resilience, and scale.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i>Heavy-duty structures</li>
+            <li><i class="fa-solid fa-check"></i>Complex coordination</li>
+            <li><i class="fa-solid fa-check"></i>Safety-first methods</li>
+          </ul>
+          <a href="contact.html" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <i class="fa-solid fa-hammer"></i>
+          </div>
+          <h3>Renovation &amp; Remodeling</h3>
+          <p>Modern transformations that enhance function, aesthetics, and the value of every property.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i>Interior upgrades</li>
+            <li><i class="fa-solid fa-check"></i>Structural improvements</li>
+            <li><i class="fa-solid fa-check"></i>Minimal disruption</li>
+          </ul>
+          <a href="contact.html" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <i class="fa-solid fa-list-check"></i>
+          </div>
+          <h3>Project Management</h3>
+          <p>Coordinated oversight that keeps timelines, budgets, and quality targets aligned from start to finish.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i>Schedule control</li>
+            <li><i class="fa-solid fa-check"></i>Budget visibility</li>
+            <li><i class="fa-solid fa-check"></i>Stakeholder coordination</li>
+          </ul>
+          <a href="contact.html" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon" aria-hidden="true">
+            <i class="fa-solid fa-road"></i>
+          </div>
+          <h3>Civil &amp; Infrastructure Works</h3>
+          <p>Reliable infrastructure delivery for roads, utilities, and public-facing developments with precision.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i>Siteworks planning</li>
+            <li><i class="fa-solid fa-check"></i>Utility coordination</li>
+            <li><i class="fa-solid fa-check"></i>Long-term durability</li>
+          </ul>
+          <a href="contact.html" class="service-link">Learn More <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects-section" aria-labelledby="projects-title">
+      <div class="projects-intro">
+        <p class="eyebrow section-eyebrow">Selected Work</p>
+        <h2 class="section-title" id="projects-title">Featured Projects</h2>
+        <p class="section-subheading">
+          Explore a selection of our completed projects, demonstrating our commitment to quality, innovation, and excellence across residential, commercial, and industrial developments.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="assets/images/modern-home.jpg" alt="Modern commercial complex with a refined architectural facade" loading="lazy">
+          <div class="project-overlay">
+            <div class="project-content">
+              <h3>Modern Commercial Complex</h3>
+              <p>High-quality commercial development completed with precision and efficiency.</p>
+              <a href="portfolio.html" class="project-link">View Project <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/images/coastal-res.jpg" alt="Luxury residential estate with elegant outdoor living spaces" loading="lazy">
+          <div class="project-overlay">
+            <div class="project-content">
+              <h3>Luxury Residential Estate</h3>
+              <p>Premium residential construction delivering comfort, durability, and modern design.</p>
+              <a href="portfolio.html" class="project-link">Explore Project <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/images/constr-img-1.jpg" alt="Industrial facility built for operational efficiency and safety" loading="lazy">
+          <div class="project-overlay">
+            <div class="project-content">
+              <h3>Industrial Facility</h3>
+              <p>Large-scale industrial project built to meet operational and safety standards.</p>
+              <a href="portfolio.html" class="project-link">Learn More <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="why-choose-section" aria-labelledby="why-choose-title">
+      <div class="why-choose-intro">
+        <p class="eyebrow section-eyebrow why-eyebrow">Trusted Excellence</p>
+        <h2 class="section-title" id="why-choose-title">Why Choose Us</h2>
+        <p class="section-subheading">
+          We combine expertise, innovation, and a commitment to excellence to deliver construction solutions that exceed expectations and create lasting value.
+        </p>
+      </div>
+
+      <div class="why-choose-grid">
+        <article class="why-card">
+          <div class="why-icon" aria-hidden="true">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3>Proven Expertise</h3>
+          <p>Years of industry experience delivering successful residential, commercial, and industrial projects.</p>
+        </article>
+
+        <article class="why-card">
+          <div class="why-icon" aria-hidden="true">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <h3>Quality Assurance</h3>
+          <p>Every project is completed using high-quality materials and strict quality standards.</p>
+        </article>
+
+        <article class="why-card">
+          <div class="why-icon" aria-hidden="true">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <h3>On-Time Delivery</h3>
+          <p>Efficient planning and execution ensure projects are completed within agreed timelines.</p>
+        </article>
+
+        <article class="why-card">
+          <div class="why-icon" aria-hidden="true">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3>Safety First</h3>
+          <p>We maintain rigorous safety practices to protect our workforce, clients, and project sites.</p>
+        </article>
+
+        <article class="why-card">
+          <div class="why-icon" aria-hidden="true">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <h3>Innovative Solutions</h3>
+          <p>Modern construction methods and technology drive efficiency, durability, and long-term value.</p>
+        </article>
+
+        <article class="why-card">
+          <div class="why-icon" aria-hidden="true">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h3>Client-Focused Approach</h3>
+          <p>We work closely with every client to understand their vision and deliver tailored construction solutions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="stats-section" aria-labelledby="stats-title">
+      <div class="stats-intro">
+        <p class="eyebrow section-eyebrow stats-eyebrow">Trusted Results</p>
+        <h2 class="section-title" id="stats-title">Our Impact in Numbers</h2>
+        <p class="section-subheading">
+          Our experience, dedication, and commitment to excellence are reflected in the milestones we’ve achieved across every project.
+        </p>
+      </div>
+
+      <div class="stats-grid">
+        <article class="stat-card">
+          <div class="stat-icon" aria-hidden="true">
+            <i class="fa-solid fa-hammer"></i>
+          </div>
+          <div class="stat-number" data-target="250">0</div>
+          <p class="stat-label">Projects Completed</p>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-icon" aria-hidden="true">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+          <div class="stat-number" data-target="20">0</div>
+          <p class="stat-label">Years of Experience</p>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-icon" aria-hidden="true">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div class="stat-number" data-target="120">0</div>
+          <p class="stat-label">Skilled Professionals</p>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-icon" aria-hidden="true">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="stat-number" data-target="98">0</div>
+          <p class="stat-label">Client Satisfaction</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="testimonials-section" aria-labelledby="testimonials-title">
+      <div class="testimonials-intro">
+        <p class="eyebrow section-eyebrow testimonials-eyebrow">Client Confidence</p>
+        <h2 class="section-title" id="testimonials-title">What Our Clients Say</h2>
+        <p class="section-subheading testimonial-subheading">
+          We take pride in delivering exceptional construction services that earn the confidence and satisfaction of our clients.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <div class="testimonial-quote" aria-hidden="true">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+          <p class="testimonial-text">Prime Build exceeded our expectations from planning to completion. Their professionalism, attention to detail, and commitment to quality made the entire construction process seamless.</p>
+          <div class="testimonial-author">
+            <img src="assets/images/about-img.jpg" alt="Michael Johnson" loading="lazy">
+            <div>
+              <h3>Michael Johnson</h3>
+              <p>Property Developer</p>
+            </div>
+          </div>
+          <div class="testimonial-rating" aria-label="Five star rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-quote" aria-hidden="true">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+          <p class="testimonial-text">The team delivered our commercial project ahead of schedule without compromising quality. Their communication and project management were outstanding throughout.</p>
+          <div class="testimonial-author">
+            <img src="assets/images/coastal-res.jpg" alt="Sarah Williams" loading="lazy">
+            <div>
+              <h3>Sarah Williams</h3>
+              <p>Commercial Client</p>
+            </div>
+          </div>
+          <div class="testimonial-rating" aria-label="Five star rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-quote" aria-hidden="true">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+          <p class="testimonial-text">Prime Build delivered our industrial facility with exceptional precision, meeting every safety, quality, and operational requirement. Their professionalism, technical expertise, and timely execution made them a trusted partner throughout the entire project.</p>
+          <div class="testimonial-author">
+            <img src="assets/images/constr-img-3.jpg" alt="Richard Thompson" loading="lazy">
+            <div>
+              <h3>Richard Thompson</h3>
+              <p>Operations Manager, Apex Manufacturing Ltd.</p>
+            </div>
+          </div>
+          <div class="testimonial-rating" aria-label="Five star rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-preview-section" aria-labelledby="contact-preview-title">
+      <div class="contact-preview-shell">
+        <div class="contact-preview-copy">
+          <p class="eyebrow section-eyebrow">Contact us</p>
+          <h2 class="section-title" id="contact-preview-title">Let’s Build Something Great Together</h2>
+          <p class="section-subheading">
+            Whether you’re planning a residential, commercial, or industrial project, our team is ready to discuss your vision and provide expert guidance.
+          </p>
+
+          <div class="contact-preview-card">
+            <h3>Prime Build Construction Company</h3>
+            <p>
+              We’re committed to delivering exceptional construction solutions with professionalism, precision, and reliability. Contact our team today to discuss your next project.
+            </p>
+
+            <ul class="contact-preview-list">
+              <li>
+                <div class="contact-preview-label-row">
+                  <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                  <strong>Phone:</strong>
+                </div>
+                <span class="contact-preview-value">+12272834843</span>
+              </li>
+              <li>
+                <div class="contact-preview-label-row">
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                  <strong>Email:</strong>
+                </div>
+                <span class="contact-preview-value">primebuildconstruction20@gmail.com</span>
+              </li>
+              <li>
+                <div class="contact-preview-label-row">
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                  <strong>Office:</strong>
+                </div>
+                <span class="contact-preview-value">V5VW+R2, Nueva Gerona, Cuba</span>
+              </li>
+              <li>
+                <div class="contact-preview-label-row">
+                  <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                  <strong>Working Hours:</strong>
+                </div>
+                <span class="contact-preview-value">Monday – Friday, 8:00 AM – 6:00 PM</span>
+              </li>
+            </ul>
+
+            <a href="contact.html" class="contact-preview-link">For more info visit contact page <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="contact-preview-form-card">
+          <h1 style="text-align: center; margin-bottom: 30px;">Leave a message</h1>
+          <form class="contact-preview-form" id="contactPreviewForm" novalidate>
+            <div class="form-field">
+              <label for="contactFullName">Full Name</label>
+              <input id="contactFullName" name="fullName" type="text" required>
+            </div>
+
+            <div class="form-field">
+              <label for="contactEmail">Email Address</label>
+              <input id="contactEmail" name="email" type="email" required>
+            </div>
+
+            <div class="form-field">
+              <label for="contactPhone">Phone Number</label>
+              <input id="contactPhone" name="phone" type="tel" required>
+            </div>
+
+            <div class="form-field">
+              <label for="contactProjectType">Project Type</label>
+              <select id="contactProjectType" name="projectType" required>
+                <option value="">Select a project type</option>
+                <option value="Residential">Residential</option>
+                <option value="Commercial">Commercial</option>
+                <option value="Industrial">Industrial</option>
+                <option value="Renovation">Renovation</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="contact-submit-btn" id="contactSubmitBtn">
+              <span class="submit-label">Send Inquiry</span>
+              <span class="button-spinner" aria-hidden="true"></span>
+            </button>
+
+            <div class="form-status" id="contactFormStatus" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <img src="assets/logo.png" alt="Prime Build Construction" class="footer-logo">
+          <p class="footer-description">
+            Building the future through innovation, precision, and excellence across residential, commercial, and industrial construction projects.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li>Residential Construction</li>
+            <li>Commercial Construction</li>
+            <li>Industrial Construction</li>
+            <li>Project Management</li>
+            <li>Civil &amp; Infrastructure Works</li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <ul class="footer-contact">
+            <li><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span>+12272834843</span></li>
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><span>primebuildconstruction20@gmail.com</span></li>
+            <li><i class="fa-solid fa-headset" aria-hidden="true"></i><span>primebuildconstruction20@gmail.com</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Prime Build Construction Company. All rights reserved.</p>
+        <div class="footer-bottom-icons" aria-label="Contact shortcuts">
+          <a href="tel:+12272834843" aria-label="Call us"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+          <a href="mailto:primebuildconstruction20@gmail.com" aria-label="Email us"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+          <a href="mailto:primebuildconstruction20@gmail.com" aria-label="Support"><i class="fa-solid fa-headset" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/12272834843" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
