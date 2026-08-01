@@ -13,6 +13,10 @@ a{
     overflow-x: hidden !important;
 }
 
+.contact-detail-item{
+    overflow-x: hidden !important;
+}
+
 input, textarea, select{
     overflow-x: hidden !important;
 }
