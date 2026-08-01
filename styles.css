@@ -8,6 +8,16 @@ a{
     text-decoration: none;
 }
 
+
+.contact-preview-list li{
+    overflow-x: hidden !important;
+}
+
+input, textarea, select{
+    overflow-x: hidden !important;
+}
+    
+
 html,
 body {
     overflow-x: hidden;
