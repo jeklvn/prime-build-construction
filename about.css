@@ -1,0 +1,627 @@
+.about-hero {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 76vh;
+      padding: clamp(5rem, 9vw, 7.5rem) 1.5rem;
+      background: linear-gradient(180deg, rgba(11, 27, 45, 0.24) 0%, rgba(11, 27, 45, 0.62) 100%), url("assets/images/about-img.jpg") center/cover no-repeat;
+      color: var(--light);
+      overflow: hidden;
+    }
+
+    .about-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(11, 27, 45, 0.45);
+      backdrop-filter: blur(5px);
+      z-index: 0;
+    }
+
+    .about-hero > * {
+      position: relative;
+      z-index: 1;
+      animation: fadeUp 0.9s ease both;
+    }
+
+    .about-hero .abt-hero-eyebrow {
+      display: inline-flex !important;
+      margin: 0 auto 1.2rem;
+      padding: 0.5rem 0.95rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--off-white);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      animation-delay: 0.1s;
+    }
+
+    .about-hero h1 {
+      font-size: clamp(2.8rem, 5vw, 4.8rem);
+      line-height: 1.02;
+      max-width: 860px;
+      margin: 0 auto;
+      color: var(--light);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      animation-delay: 0.25s;
+    }
+
+    .about {
+      width: min(1200px, 100%);
+      margin: 0 auto;
+      padding: clamp(4rem, 8vw, 6rem) 1.5rem;
+      display: grid;
+      grid-template-columns: minmax(280px, 1.05fr) minmax(320px, 0.95fr);
+      gap: 2.5rem;
+      align-items: center;
+      background: var(--off-white);
+      border: 1px solid rgba(11, 27, 45, 0.08);
+      border-radius: 28px;
+      box-shadow: 0 20px 45px rgba(11, 27, 45, 0.08);
+    }
+
+    .about img {
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      border-radius: 28px;
+      box-shadow: 0 24px 55px rgba(11, 27, 45, 0.08);
+    }
+
+    .about-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1.35rem;
+      justify-content: center;
+    }
+
+    .about-text h2 {
+      font-size: clamp(2.2rem, 4vw, 3rem);
+      line-height: 1.05;
+      color: var(--navy);
+      margin: 0;
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--charcoal);
+      max-width: 680px;
+    }
+
+    .about-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      padding: 1rem 1.5rem;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 700;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      box-shadow: 0 14px 32px rgba(196, 147, 50, 0.22);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+      text-decoration: none;
+    }
+
+    .about-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 36px rgba(196, 147, 50, 0.28);
+      background: #d8a142;
+    }
+
+    .story {
+      width: min(1200px, 100%);
+      margin: 0 auto;
+      padding: clamp(4rem, 8vw, 6rem) 1.5rem;
+      color: var(--navy);
+    }
+
+    .story .eyebrow {
+      display: flex;
+      justify-content: center;
+      width: fit-content;
+      margin: 0 auto 1rem;
+      padding: 0.5rem 0.95rem;
+      border-radius: 999px;
+      border: 1px solid rgba(196, 147, 50, 0.22);
+      background: rgba(196, 147, 50, 0.12);
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .mission-heading {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.08;
+      max-width: 760px;
+      margin: 0 auto 2rem;
+      color: var(--navy);
+      text-align: center;
+      font-weight: 800;
+    }
+
+    .mission-vision-container {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.75rem;
+      align-items: stretch;
+    }
+
+    .mission,
+    .vision {
+      background: var(--light);
+      padding: 2.2rem;
+      border-radius: 28px;
+      border: 1px solid rgba(11, 27, 45, 0.07);
+      box-shadow: 0 18px 44px rgba(11, 27, 45, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+      min-height: 100%;
+    }
+
+    .mission:hover,
+    .vision:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 26px 56px rgba(11, 27, 45, 0.12);
+    }
+
+    .mission-icon-container,
+    .vision-icon-container {
+      width: 60px;
+      height: 60px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: rgba(196, 147, 50, 0.16);
+      color: var(--gold);
+      font-size: 1.25rem;
+    }
+
+    .mission h3,
+    .vision h3 {
+      margin: 0;
+      color: var(--navy);
+      font-size: 1.35rem;
+      line-height: 1.2;
+    }
+
+    .mission p,
+    .vision p {
+      margin: 0;
+      color: var(--charcoal);
+      line-height: 1.85;
+      font-size: 1rem;
+    }
+
+    .leadership {
+      width: min(1200px, 100%);
+      margin: 0 auto;
+      padding: clamp(4rem, 8vw, 6rem) 1.5rem;
+      color: var(--navy);
+    }
+
+    .leadership-header {
+      max-width: 760px;
+      margin: 0 auto 2.5rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .leadership-header .eyebrow {
+      display: inline-flex;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 0.5rem 0.95rem;
+      border-radius: 999px;
+      border: 1px solid rgba(196, 147, 50, 0.22);
+      background: rgba(196, 147, 50, 0.12);
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .leadership-header h2 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.08;
+      color: var(--navy);
+      font-weight: 800;
+    }
+
+    .leadership-copy {
+      margin: 0 auto;
+      max-width: 760px;
+      color: #47505a;
+      font-size: 1rem;
+      line-height: 1.85;
+    }
+
+    .leadership-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.75rem;
+      align-items: stretch;
+    }
+
+    .exec-card {
+      display: flex;
+      flex-direction: column;
+      background: var(--light);
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid rgba(11, 27, 45, 0.06);
+      box-shadow: 0 20px 45px rgba(11, 27, 45, 0.08);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      min-height: 100%;
+    }
+
+    .exec-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 32px 70px rgba(11, 27, 45, 0.14);
+    }
+
+    .exec-image {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+    }
+
+    .exec-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .exec-card:hover .exec-image img {
+      transform: scale(1.05);
+    }
+
+    .exec-body {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2rem 1.75rem 2.25rem;
+      flex: 1;
+    }
+
+    .exec-name {
+      margin: 0;
+      font-size: 1.45rem;
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--navy);
+    }
+
+    .exec-title {
+      margin: 0;
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .exec-bio {
+      margin: 0;
+      color: #55606b;
+      line-height: 1.85;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 900px) {
+      .leadership-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .commitment {
+      width: 100%;
+      margin: 0;
+      padding: clamp(4rem, 8vw, 6rem) 1.5rem;
+      background: rgba(11, 27, 45, 0.04);
+    }
+
+    .commitment-inner {
+      width: min(1200px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .commitment-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+      justify-content: center;
+    }
+
+    .commitment-text .eyebrow {
+      display: inline-flex;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 0.5rem 0.95rem;
+      border-radius: 999px;
+      border: 1px solid rgba(196, 147, 50, 0.22);
+      background: rgba(196, 147, 50, 0.12);
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      width: fit-content;
+    }
+
+    .commitment-text h2 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      color: var(--navy);
+      font-weight: 800;
+      max-width: 20ch;
+    }
+
+    .commitment-copy {
+      margin: 0;
+      color: #47505a;
+      font-size: 1rem;
+      line-height: 1.85;
+      max-width: 640px;
+    }
+
+    .commitment-image {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 24px;
+      box-shadow: 0 20px 45px rgba(11, 27, 45, 0.08);
+    }
+
+    .commitment-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .commitment-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      width: 100%;
+    }
+
+    .commitment-card {
+      background: var(--light);
+      border-radius: 24px;
+      border: 1px solid rgba(11, 27, 45, 0.06);
+      box-shadow: 0 18px 44px rgba(11, 27, 45, 0.08);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      padding: 2rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      min-height: 100%;
+      width: 100%;
+    }
+
+    .commitment-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 64px rgba(11, 27, 45, 0.12);
+    }
+
+    .commitment-icon {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: rgba(11, 27, 45, 0.06);
+      color: var(--navy);
+      font-size: 1.15rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .commitment-card:hover .commitment-icon {
+      background: rgba(196, 147, 50, 0.16);
+      color: var(--gold);
+    }
+
+    .commitment-card h3 {
+      margin: 0;
+      font-size: 1.15rem;
+      line-height: 1.3;
+      color: var(--navy);
+    }
+
+    .commitment-card p {
+      margin: 0;
+      color: #55606b;
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    .cta-banner {
+      position: relative;
+      width: 100%;
+      padding: clamp(5rem, 7vw, 7rem) 1.5rem;
+      background: linear-gradient(180deg, rgba(11, 27, 45, 0.45), rgba(11, 27, 45, 0.65)), url("assets/images/constr-img-3.jpg") center/cover no-repeat;
+      color: var(--light);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .cta-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(11, 27, 45, 0.38), rgba(11, 27, 45, 0.72));
+      backdrop-filter: blur(10px);
+      z-index: 0;
+    }
+
+    .cta-shell {
+      position: relative;
+      z-index: 1;
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .cta-shell .eyebrow {
+      display: inline-flex !important;
+      justify-content: center;
+      margin: 0 auto 1.15rem;
+      padding: 0.6rem 1rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      background: rgba(255, 255, 255, 0.12);
+      color: var(--light);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .cta-banner h2 {
+      margin: 0 auto 1.5rem;
+      max-width: 16ch;
+      font-size: clamp(2.5rem, 4vw, 4rem);
+      line-height: 1.18;
+      color: var(--light);
+      letter-spacing: -0.02em;
+    }
+
+    .cta-copy {
+      margin: 0 auto;
+      max-width: 720px;
+      font-size: 1rem;
+      line-height: 1.9;
+      color: rgba(247, 247, 245, 0.95);
+    }
+
+    .cta-actions {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .cta-actions .primary-cta,
+    .cta-actions .secondary-cta {
+      min-width: 180px;
+      padding: 0.95rem 1.6rem;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .cta-actions .primary-cta:hover,
+    .cta-actions .secondary-cta:hover {
+      transform: translateY(-2px);
+    }
+
+    .cta-banner .primary-cta {
+      box-shadow: 0 18px 42px rgba(196, 147, 50, 0.24);
+    }
+
+    .cta-banner .secondary-cta {
+      color: var(--light);
+      border-color: rgba(255, 255, 255, 0.35);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .fade-up-section {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.35s ease-in-out, transform 0.35s ease-in-out;
+    }
+
+    .fade-up-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 900px) {
+      .leadership-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .commitment-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .commitment-cards {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .leadership {
+        padding: clamp(3rem, 6vw, 4rem) 1.25rem;
+      }
+
+      .leadership-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .commitment {
+        padding: clamp(3rem, 6vw, 4rem) 1.25rem;
+      }
+
+      .commitment-copy {
+        max-width: 100%;
+      }
+
+      .commitment-card {
+        padding: 1.75rem 1.4rem;
+      }
+
+      .exec-body {
+        padding: 1.75rem 1.25rem 2rem;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .about-hero {
+        min-height: 58vh;
+        padding: clamp(4.3rem, 10vw, 6rem) 1.25rem;
+      }
+
+      .about-hero h1 {
+        font-size: clamp(2.4rem, 7vw, 3.6rem);
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+        padding: clamp(3rem, 6vw, 4rem) 1.25rem;
+      }
+
+      .about img {
+        max-height: 420px;
+      }
+
+      .mission-vision-container {
+        grid-template-columns: 1fr;
+      }
+
+      .story {
+        padding: clamp(3rem, 6vw, 4rem) 1.25rem;
+      }
+    }
